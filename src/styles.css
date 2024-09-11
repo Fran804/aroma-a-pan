@@ -1,1 +1,68 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --background-color: #FDF9ED;
+  --text-color: #080602;
+  --primary-color: #E5B380;
+  --primary-color-light: #f8cfa5;
+  --secundary-color: #8B9B69;
+  --secundary-color-light: #DBDDC5;
+  --accent: #4585b0;
+}
+
+@font-face {
+  font-family: 'Wade Sans Light';
+  src: url('./assets/fonts/WadeSansLightStd/cdefb35f79b10acb02f5c029363302fe.woff2') format('woff2'),
+       url('./assets/fonts/WadeSansLightStd/cdefb35f79b10acb02f5c029363302fe.woff') format('woff'),
+       url('./assets/fonts/WadeSansLightStd/cdefb35f79b10acb02f5c029363302fe.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neucha';
+  src: url('./assets/fonts/neucha/neucha-latin-400-normal.woff2') format('woff2'),
+       url('./assets/fonts/neucha/neucha-latin-400-normal.woff') format('woff'),
+       url('./assets/fonts/neucha/neucha-latin-400-normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rampart';
+  src: url('./assets/fonts/rampart/rampart-one-latin-400-normal.woff2') format('woff2'),
+       url('./assets/fonts/rampart/rampart-one-latin-400-normal.woff') format('woff'),
+       url('./assets/fonts/rampart/rampart-one-latin-400-normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General declarations */
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+*{
+  font-family: 'Neucha';
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.title-font {
+  font-family: 'Wade Sans Light';
+}
+
+.subtitle-font {
+  font-family: 'Rampart';
+  color: var(--accent)
+}
