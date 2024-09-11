@@ -1,18 +1,16 @@
 :root {
-  --background-color: #FDF9ED;
-  --text-color: #080602;
-  --primary-color: #E5B380;
+  --background-color: #FBF3D5;
+  --text-color: #050315;
+  --primary-color: #DBA979;
   --primary-color-light: #f8cfa5;
-  --secundary-color: #8B9B69;
+  --secundary-color: #ECCA9C;
   --secundary-color-light: #DBDDC5;
-  --accent: #4585b0;
+  --accent: #6d9552;
 }
 
 @font-face {
-  font-family: 'Wade Sans Light';
-  src: url('./assets/fonts/WadeSansLightStd/cdefb35f79b10acb02f5c029363302fe.woff2') format('woff2'),
-       url('./assets/fonts/WadeSansLightStd/cdefb35f79b10acb02f5c029363302fe.woff') format('woff'),
-       url('./assets/fonts/WadeSansLightStd/cdefb35f79b10acb02f5c029363302fe.ttf') format('truetype');
+  font-family: 'Drukaatie Burti';
+  src: url('./assets/fonts/drukaatieBurti/DrukaatieBurti-Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -27,10 +25,10 @@
 }
 
 @font-face {
-  font-family: 'Rampart';
-  src: url('./assets/fonts/rampart/rampart-one-latin-400-normal.woff2') format('woff2'),
-       url('./assets/fonts/rampart/rampart-one-latin-400-normal.woff') format('woff'),
-       url('./assets/fonts/rampart/rampart-one-latin-400-normal.ttf') format('truetype');
+  font-family: 'Neucha';
+  src: url('./assets/fonts/neucha/neucha-latin-400-normal.woff2') format('woff2'),
+       url('./assets/fonts/neucha/neucha-latin-400-normal.woff') format('woff'),
+       url('./assets/fonts/neucha/neucha-latin-400-normal.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -59,10 +57,5 @@ body {
 }
 
 .title-font {
-  font-family: 'Wade Sans Light';
-}
-
-.subtitle-font {
-  font-family: 'Rampart';
-  color: var(--accent)
+  font-family: 'Drukaatie Burti';
 }
