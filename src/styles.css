@@ -1,5 +1,5 @@
 :root {
-  --background-color: #FBF3D5;
+  --background-color: #FFFF;
   --text-color: #050315;
   --primary-color: #DBA979;
   --primary-color-light: #f8cfa5;
@@ -50,10 +50,6 @@ small {font-size: 0.750rem; /* 12px */}
   font-family: 'Neucha';
   margin: 0;
   padding: 0;
-}
-
-body {
-  background-color: var(--background-color);
 }
 
 .title-font {

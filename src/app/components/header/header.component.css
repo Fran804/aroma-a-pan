@@ -1,0 +1,18 @@
+#header-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.img-ramo-der {
+  width: 5rem;
+}
+
+.logo-aroma {
+  width: 9rem;
+  border-radius: 50%;
+}
+
+.img-ramo-izq {
+  width: 5rem;
+}
