@@ -21,4 +21,6 @@
     border: 1px solid black;
     padding: .3rem 2.5rem;
     border-radius: 15px;
+    color: black;
+    cursor: pointer;
 }

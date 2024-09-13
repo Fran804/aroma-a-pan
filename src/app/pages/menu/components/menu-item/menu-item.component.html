@@ -6,8 +6,8 @@
     <ng-content select="[body]"></ng-content>
     <div class="footer-item">
         @if (hasGuarniciones) {
-            <button class="btn-item"><h5>Guarniciones</h5></button>
+            <button (click)="openGuarnicion()" class="btn-item"><h5>Guarniciones</h5></button>
         }
-        <button class="btn-item"><h5>Extras</h5></button>
+        <button (click)="openExtras()" class="btn-item"><h5>Extras</h5></button>
     </div>
 </div>

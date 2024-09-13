@@ -21,10 +21,40 @@ export class MenuItemComponent implements OnInit {
   openImage(img: string) {
     Swal.fire({
       imageUrl: img,
-      imageWidth: "90%",
-      imageHeight: "auto",
+      imageWidth: '80%',
       showConfirmButton: false,
+      showCloseButton: true,
       imageAlt: "Imagen dañada, disculpe los inconvenientes",
+    });
+  }
+
+  openGuarnicion() {
+    Swal.fire({
+      title: '<h2 class="title-font">Guarniciones disponibles</h2>',
+      html: `
+        <h3>Frijoles refritos</h3>
+        <h3>Papas rostizadas</h3>
+        <h3>Ensalada</h3>
+        <h3>Chilaquiles</h3>
+      `,
+      showConfirmButton: false,
+      showCloseButton: true
+    });
+  }
+
+  openExtras() {
+    Swal.fire({
+      title: '<h2 class="title-font">Extras disponibles</h2>',
+      html: `
+        <h3>Huevo: $15</h3>
+        <h3>Aguacate: $35</h3>
+        <h3>Tsinc: $32</h3>
+        <h3>Salmón crudo: $45</h3>
+        <h3>Queso: $30</h3>
+        <h3>Orden de papas hasbrown: $58</h3>
+      `,
+      showConfirmButton: false,
+      showCloseButton: true
     });
   }
 
