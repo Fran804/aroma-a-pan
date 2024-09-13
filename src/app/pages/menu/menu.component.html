@@ -2,13 +2,35 @@
   <app-header/>
   <div class="menu-body">
     <app-separator/>
-    <app-menu-item [imgLink]="'../../assets/imgs/logo.jpg'" [menuTitle]="'Chilaquiles'" [menuPrice]="'$115'">
+    <app-menu-item [imgLink]="'assets/imgs/chilaquiles.jpg'" [menuTitle]="'Chilaquiles'" [menuPrice]="'$115'">
       <div body>
         <h4>Totopos de maiz, salsa roja o verde, frijol refrito, crema, queso panela y cebolla morada.</h4>
         <h4>Con huevo: $125</h4>
         <h4>Con longaniza: $145</h4>
         <h4>Con pechuga de pollo: $150</h4>
         <h4>Con arrachera: $155</h4>
+      </div>
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/huevosBenedictinos.jpg'" [menuTitle]="'Huevos Benedictinos'" [menuPrice]="'$128'" [hasGuarniciones]="true">
+      <div body>
+        <h4>Huevos pochados tiernos, english muffin, salsa holandesa.</h4>
+        <h4>Con lomo ahumado: $130</h4>
+        <h4>Con jamón serrano: $145</h4>
+        <h4>Con salmón: $162</h4>
+        <h4>*Incluye 1 guarnición</h4>
+      </div>
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/omelette.jpg'" [menuTitle]="'Omelette Aroma'" [menuPrice]="'$112'" [hasGuarniciones]="true">
+      <div body>
+        <h4>3 Huevos, espinaca jitomate, cebolla morada, queso oaxaca, servido con pan de masa madre.</h4>
+        <h4>*Incluye 1 guarnición</h4>
+      </div>
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/huevosAhogados.jpg'" [menuTitle]="'Huevos Ahogados'" [menuPrice]="'$155'">
+      <div body>
+        <h4>3 Huevos ahogados en salsa ligeramente picante, queso panela, nopales asados, crema, cebolla morada, servido con pan de masa madre.</h4>
+        <h4>Con longaniza: $135</h4>
+        <h4>Con arrachera: $147</h4>
       </div>
     </app-menu-item>
   </div>

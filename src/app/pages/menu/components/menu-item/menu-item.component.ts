@@ -11,7 +11,7 @@ export class MenuItemComponent implements OnInit {
   @Input() menuTitle: string = '';
   @Input() menuPrice: string = '';
   @Input() hasGuarniciones: boolean = false;
-  @Input() imgLink: string = '';
+  @Input() imgLink: string = "";
 
   constructor() { }
 
@@ -21,8 +21,10 @@ export class MenuItemComponent implements OnInit {
   openImage(img: string) {
     Swal.fire({
       imageUrl: img,
-      imageAlt: "Imagen dañada, disculpe los inconvenientes",
+      imageWidth: "90%",
+      imageHeight: "auto",
       showConfirmButton: false,
+      imageAlt: "Imagen dañada, disculpe los inconvenientes",
     });
   }
 
