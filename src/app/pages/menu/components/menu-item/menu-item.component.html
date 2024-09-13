@@ -1,6 +1,6 @@
 <div class="menu-item-container">
     <div class="title-item">
-        <h2>{{menuTitle}}</h2>
+        <h2 style="cursor: pointer;" (click)="openImage(imgLink)">{{menuTitle}}</h2>
         <h2>{{menuPrice}}</h2>
     </div>
     <ng-content select="[body]"></ng-content>
