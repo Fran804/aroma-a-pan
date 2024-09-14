@@ -1,7 +1,7 @@
 <main id="menu-container">
   <app-header/>
   <div class="menu-body">
-    <app-separator [nameSeparator]="'Desayunos'"/>
+    <app-separator id="Desayunos" [nameSeparator]="'Desayunos'"/>
     <app-menu-item [imgLink]="'assets/imgs/chilaquiles.jpg'" [menuTitle]="'Chilaquiles'" [menuPrice]="'$115'">
       <div body>
         <h4>Totopos de maiz, salsa roja o verde, frijol refrito, crema, queso panela y cebolla morada.</h4>
@@ -31,6 +31,63 @@
         <h4>3 Huevos ahogados en salsa ligeramente picante, queso panela, nopales asados, crema, cebolla morada, servido con pan de masa madre.</h4>
         <h4>Con longaniza: $135</h4>
         <h4>Con arrachera: $147</h4>
+      </div>
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/BreakFast.jpg'" [menuTitle]="'Breakfast Platter'" [menuPrice]="'$155'">
+      <div body>
+        <h4>3 Huevos, tocino, papas hasbrown, hongos salteados, compota de temporada, pan de masa madre.</h4>
+      </div>
+    </app-menu-item>
+    <h1 id="Sandwiches" class="title-font">Sándwiches</h1>
+    <app-menu-item [imgLink]="'assets/imgs/club.jpg'" [menuTitle]="'Club Sándwich'" [menuPrice]="'$136'" [hasGuarniciones]="true">
+      <div body>
+        <h4>Pan de masa madre, crepa de huevo, pechuga de pollo, tocino, vegetales frescos y aderezo chipotle.</h4>
+        <h4>*Incluye 1 guarnición</h4>
+      </div>
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/croque.jpg'" [menuTitle]="'Croque madame'" [menuPrice]="'$136'" [hasGuarniciones]="true">
+      <div body>
+        <h4>Pan de masa madre, jamón de pierna ahumado artesanal, queso muenster, mostaza dijon, salsa bechamel y huevo estrellado.</h4>
+        <h4>*Incluye 1 guarnición</h4>
+      </div>
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/croissant.jpg'" [menuTitle]="'Croissant Monsieur'" [menuPrice]="'$112'">
+      <div body>
+        <h4>Croissant, jamón de pierna ahumado artesanal, queso muenster, mostaza dijon, bañado en salsa bechamel y queso parmesano.</h4>
+      </div>
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/umami.jpg'" [menuTitle]="'Sándwich Umami'" [menuPrice]="'$155'" [hasGuarniciones]="true">
+      <div body>
+        <h4>Pan de aceite de oliva, lechón borracho, pierna ahumada, queso muenster, pepinillos, mostaza y cebolla morada.</h4>
+        <h4>*Incluye 1 guarnición</h4>
+      </div>
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/croissantHuevo.jpg'" [menuTitle]="'Croissant de huevo'" [menuPrice]="'$99'">
+      <div body>
+        <h4>Croissant, crepa de huevo, queso panela asado, jitomate rostizado, arugula, pesto de albahaca.</h4>
+      </div>
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/BreakfastBurger.jpg'" [menuTitle]="'Breakfast Burger'" [menuPrice]="'$132'" [hasGuarniciones]="true">
+      <div body>
+        <h4>Pan brioche, huevo revuelto con mantequilla, tocino crujiente, queso americano, arugula y aderezo chipotle.</h4>
+        <h4>*Incluye 1 guarnición</h4>
+      </div>
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/chefBurger.jpg'" [menuTitle]="'Chefs Burger'" [menuPrice]="'$155'" [hasGuarniciones]="true">
+      <div body>
+        <h4>Pan brioche, Breakfast sausage, huevo revuelto con mantequilla, tocino crujiente, queso americano, arugula y salsa de la casa.</h4>
+        <h4>*Incluye 1 guarnición</h4>
+      </div>
+    </app-menu-item>
+    <h1 id="Frutas" class="title-font">Frutas del día</h1>
+    <app-menu-item [imgLink]="'assets/imgs/frutas.jpg'" [menuTitle]="'Plato de Fruta'" [menuPrice]="'$82'">
+      <div body>
+        <h4>A elegir hasta 3 frutas de temporada.</h4>
+      </div>
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/frutas.jpg'" [menuTitle]="'Bowl Tropical'" [menuPrice]="'$112'">
+      <div body>
+        <h4>Bowl con fruta de temporada, yogurt griego, miel y granola.</h4>
       </div>
     </app-menu-item>
   </div>
