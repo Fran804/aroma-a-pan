@@ -1,7 +1,7 @@
 <main id="menu-container">
   <app-header/>
   <div class="menu-body">
-    <app-separator id="Desayunos" [nameSeparator]="'Desayunos'"/>
+    <app-separator id="Desayunos" [nameSeparator]="'Desayunos'" [subtitleSeparator]="'Se sirven hasta las 12:45 pm'"/>
     <app-menu-item [imgLink]="'assets/imgs/chilaquiles.jpg'" [menuTitle]="'Chilaquiles'" [menuPrice]="'$115'">
       <div body>
         <h4>Totopos de maiz, salsa roja o verde, frijol refrito, crema, queso panela y cebolla morada.</h4>
@@ -79,15 +79,81 @@
         <h4>*Incluye 1 guarnición</h4>
       </div>
     </app-menu-item>
+
     <h1 id="Frutas" class="title-font">Frutas del día</h1>
-    <app-menu-item [imgLink]="'assets/imgs/frutas.jpg'" [menuTitle]="'Plato de Fruta'" [menuPrice]="'$82'">
+
+    <app-menu-item [imgLink]="'assets/imgs/frutas.jpg'" [menuTitle]="'Plato de Fruta'" [menuPrice]="'$82'" [hasExtras]="false">
       <div body>
         <h4>A elegir hasta 3 frutas de temporada.</h4>
       </div>
     </app-menu-item>
-    <app-menu-item [imgLink]="'assets/imgs/frutas.jpg'" [menuTitle]="'Bowl Tropical'" [menuPrice]="'$112'">
+    <app-menu-item [imgLink]="'assets/imgs/frutas.jpg'" [menuTitle]="'Bowl Tropical'" [menuPrice]="'$112'" [hasExtras]="false">
       <div body>
         <h4>Bowl con fruta de temporada, yogurt griego, miel y granola.</h4>
+      </div>
+    </app-menu-item>
+    <app-separator id="Almuerzos" [nameSeparator]="'Almuerzos'" [subtitleSeparator]="'Se sirven a partir de la 1:30 pm'"/>
+    <app-menu-item [imgLink]="'assets/imgs/croissantJamon.jpg'" [menuTitle]="'Croissant de jamón y queso'" [menuPrice]="'$97'" [hasExtras]="false">
+      <div body>
+        <h4>Croissant, jamón de pavo, queso muenster, vegetales y aderezo chipotle.</h4>
+      </div>
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/toastHumus.jpg'" [menuTitle]="'Toast de hummus'" [menuPrice]="'$102'" [hasExtras]="false">
+      <div body>
+        <h4>Pan de masa madre tostado, hummus de garbanzo, tomates cherry, queso de cabra, pepita de calabaza y aceite de chiles.</h4>
+      </div>
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/baegalEspañol.jpg'" [menuTitle]="'Bagel español'" [menuPrice]="'$112'" [hasExtras]="false">
+      <div body>
+        <h4>Bagel de semillas, chorizo español, queso muester, jamón serrano, cremoso de queso de cabra, arugula y pesto de albahaca.</h4>
+      </div>
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/philly.jpg'" [menuTitle]="'Philly cheesesteak'" [menuPrice]="'$120'" [hasExtras]="false">
+      <div body>
+        <h4>Pan del día, carne de resm pimientos, cebolla caramelizada, mezcla de quesos, mayonesa y mostaza.</h4>
+      </div>
+    </app-menu-item>
+    <app-menu-item [imgLink]="''" [menuTitle]="'Sándwich de pavo y provolone'" [menuPrice]="'$142'" [hasExtras]="false">
+      <div body>
+        <h4>Pan del día, pechuga de pavo, queso provolone ahumado, rodajas de tomate, cebolla morada y aderezo de xcatic.</h4>
+      </div>
+    </app-menu-item>
+    <app-menu-item [imgLink]="''" [menuTitle]="'Ensalada de Huerto'" [menuPrice]="'$142'" [hasExtras]="false">
+      <div body>
+        <h4>Mix de lechugas, espinacas, pechuga de pollo, queso de cabra, cebolla morada, pepino, pepita de calabaza, arandanos, vinagreta de tomate y pesto.</h4>
+      </div>
+    </app-menu-item>
+    <app-menu-item [imgLink]="''" [menuTitle]="'Xolo'" [menuPrice]="'$122'" [hasExtras]="false">
+      <div body>
+        <h4>Pan milk, salchicha de ajo rostizado, salsa tartara, cebolla caramelizada y pico de gallo.</h4>
+      </div>
+    </app-menu-item>
+    <app-menu-item [imgLink]="''" [menuTitle]="'Grilled Cheese'" [menuPrice]="'$132'" [hasExtras]="false">
+      <div body>
+        <h4>Pan de masa madre, mezcla de quesos, mantequilla y pepinillos.</h4>
+      </div>
+    </app-menu-item>
+
+    <h1 id="Toast" class="title-font">Tostadas</h1>
+
+    <app-menu-item [imgLink]="''" [menuTitle]="'Avocado toast'" [menuPrice]="'$105'" [hasExtras]="false">
+      <div body>
+        <h4>Pan de masa madre tostado, aguacate, queso panela, tomates cherry, pesto de albahaca y servido con un huevo estrellado.</h4>
+      </div>
+    </app-menu-item>
+    <app-menu-item [imgLink]="''" [menuTitle]="'Toast de hongos'" [menuPrice]="'$112'" [hasExtras]="false">
+      <div body>
+        <h4>Pan de masa madre tostado, hongos salteados, cremoso de queso de cabra, tomate rostizado y pesto de albahaca.</h4>
+      </div>
+    </app-menu-item>
+    <app-menu-item [imgLink]="''" [menuTitle]="'French toast'" [menuPrice]="'$142'" [hasExtras]="false">
+      <div body>
+        <h4>Pan de la casa, mezcla de leche especiada, compota de temporada, nata de mascarpone y miel de maple.</h4>
+      </div>
+    </app-menu-item>
+    <app-menu-item [imgLink]="''" [menuTitle]="'Bread sampler'" [menuPrice]="'$99'" [hasExtras]="false">
+      <div body>
+        <h4>3 piezas de pan de la casa, compota de temporada, mantequilla compuesta.</h4>
       </div>
     </app-menu-item>
   </div>

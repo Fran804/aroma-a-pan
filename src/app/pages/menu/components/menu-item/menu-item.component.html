@@ -8,6 +8,8 @@
         @if (hasGuarniciones) {
             <button (click)="openGuarnicion()" class="btn-item"><h5>Guarniciones</h5></button>
         }
-        <button (click)="openExtras()" class="btn-item"><h5>Extras</h5></button>
+        @if(hasExtras){
+            <button (click)="openExtras()" class="btn-item"><h5>Extras</h5></button>
+        }
     </div>
 </div>

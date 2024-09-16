@@ -11,6 +11,7 @@ export class MenuItemComponent implements OnInit {
   @Input() menuTitle: string = '';
   @Input() menuPrice: string = '';
   @Input() hasGuarniciones: boolean = false;
+  @Input() hasExtras: boolean = true;
   @Input() imgLink: string = "";
 
   constructor() { }

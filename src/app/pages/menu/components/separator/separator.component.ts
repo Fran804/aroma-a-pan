@@ -9,5 +9,5 @@ import { Component, Input } from '@angular/core';
 })
 export class SeparatorComponent {
   @Input() nameSeparator: string = '';
-
+  @Input() subtitleSeparator: string = '';
 }
