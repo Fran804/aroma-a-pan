@@ -92,7 +92,9 @@
         <h4>Bowl con fruta de temporada, yogurt griego, miel y granola.</h4>
       </div>
     </app-menu-item>
+
     <app-separator id="Almuerzos" [nameSeparator]="'Almuerzos'" [subtitleSeparator]="'Se sirven a partir de la 1:30 pm'"/>
+
     <app-menu-item [imgLink]="'assets/imgs/croissantJamon.jpg'" [menuTitle]="'Croissant de jamón y queso'" [menuPrice]="'$97'" [hasExtras]="false">
       <div body>
         <h4>Croissant, jamón de pavo, queso muenster, vegetales y aderezo chipotle.</h4>
@@ -113,22 +115,22 @@
         <h4>Pan del día, carne de resm pimientos, cebolla caramelizada, mezcla de quesos, mayonesa y mostaza.</h4>
       </div>
     </app-menu-item>
-    <app-menu-item [imgLink]="''" [menuTitle]="'Sándwich de pavo y provolone'" [menuPrice]="'$142'" [hasExtras]="false">
+    <app-menu-item [imgLink]="'assets/imgs/sandwichPavo.jpg'" [menuTitle]="'Sándwich de pavo y provolone'" [menuPrice]="'$142'" [hasExtras]="false">
       <div body>
         <h4>Pan del día, pechuga de pavo, queso provolone ahumado, rodajas de tomate, cebolla morada y aderezo de xcatic.</h4>
       </div>
     </app-menu-item>
-    <app-menu-item [imgLink]="''" [menuTitle]="'Ensalada de Huerto'" [menuPrice]="'$142'" [hasExtras]="false">
+    <app-menu-item [imgLink]="'assets/imgs/ensalada.jfif'" [menuTitle]="'Ensalada de Huerto'" [menuPrice]="'$142'" [hasExtras]="false">
       <div body>
         <h4>Mix de lechugas, espinacas, pechuga de pollo, queso de cabra, cebolla morada, pepino, pepita de calabaza, arandanos, vinagreta de tomate y pesto.</h4>
       </div>
     </app-menu-item>
-    <app-menu-item [imgLink]="''" [menuTitle]="'Xolo'" [menuPrice]="'$122'" [hasExtras]="false">
+    <app-menu-item [imgLink]="'assets/imgs/xolo.jpg'" [menuTitle]="'Xolo'" [menuPrice]="'$122'" [hasExtras]="false">
       <div body>
         <h4>Pan milk, salchicha de ajo rostizado, salsa tartara, cebolla caramelizada y pico de gallo.</h4>
       </div>
     </app-menu-item>
-    <app-menu-item [imgLink]="''" [menuTitle]="'Grilled Cheese'" [menuPrice]="'$132'" [hasExtras]="false">
+    <app-menu-item [imgLink]="'assets/imgs/grilledCheese.jpg'" [menuTitle]="'Grilled Cheese'" [menuPrice]="'$132'" [hasExtras]="false">
       <div body>
         <h4>Pan de masa madre, mezcla de quesos, mantequilla y pepinillos.</h4>
       </div>
@@ -136,25 +138,46 @@
 
     <h1 id="Toast" class="title-font">Tostadas</h1>
 
-    <app-menu-item [imgLink]="''" [menuTitle]="'Avocado toast'" [menuPrice]="'$105'" [hasExtras]="false">
+    <app-menu-item [imgLink]="'assets/imgs/avocadoToast.jpg'" [menuTitle]="'Avocado toast'" [menuPrice]="'$105'" [hasExtras]="false">
       <div body>
         <h4>Pan de masa madre tostado, aguacate, queso panela, tomates cherry, pesto de albahaca y servido con un huevo estrellado.</h4>
       </div>
     </app-menu-item>
-    <app-menu-item [imgLink]="''" [menuTitle]="'Toast de hongos'" [menuPrice]="'$112'" [hasExtras]="false">
+    <app-menu-item [imgLink]="'assets/imgs/toastHongos.jpg'" [menuTitle]="'Toast de hongos'" [menuPrice]="'$112'" [hasExtras]="false">
       <div body>
         <h4>Pan de masa madre tostado, hongos salteados, cremoso de queso de cabra, tomate rostizado y pesto de albahaca.</h4>
       </div>
     </app-menu-item>
-    <app-menu-item [imgLink]="''" [menuTitle]="'French toast'" [menuPrice]="'$142'" [hasExtras]="false">
+    <app-menu-item [imgLink]="'assets/imgs/frenchToast.jpg'" [menuTitle]="'French toast'" [menuPrice]="'$142'" [hasExtras]="false">
       <div body>
         <h4>Pan de la casa, mezcla de leche especiada, compota de temporada, nata de mascarpone y miel de maple.</h4>
       </div>
     </app-menu-item>
-    <app-menu-item [imgLink]="''" [menuTitle]="'Bread sampler'" [menuPrice]="'$99'" [hasExtras]="false">
+    <app-menu-item [imgLink]="'assets/imgs/breadSampler.jpg'" [menuTitle]="'Bread sampler'" [menuPrice]="'$99'" [hasExtras]="false">
       <div body>
         <h4>3 piezas de pan de la casa, compota de temporada, mantequilla compuesta.</h4>
       </div>
+    </app-menu-item>
+
+    <h1 id="Bakery" class="title-font">Panaderia</h1>
+
+    <app-menu-item [imgLink]="'assets/imgs/croissantPan.jpg'" [menuTitle]="'Croissant'" [menuPrice]="'$45'" [hasExtras]="false">
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/chocolatin.jpg'" [menuTitle]="'Chocolatin'" [menuPrice]="'$52'" [hasExtras]="false">
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/croissantAlmendrado.jpg'" [menuTitle]="'Croissant almendrado'" [menuPrice]="'$56'" [hasExtras]="false">
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/chocolatinAlmendrado.jpg'" [menuTitle]="'Chocolatin almendrado'" [menuPrice]="'$66'" [hasExtras]="false">
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/payManzana.jpg'" [menuTitle]="'Pay de manzana'" [menuPrice]="'$59'" [hasExtras]="false">
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/trenza.jpg'" [menuTitle]="'Trenza de canela'" [menuPrice]="'$52'" [hasExtras]="false">
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/cheesecakeMoras.jpg'" [menuTitle]="'Cheesecake de moras'" [menuPrice]="'$52'" [hasExtras]="false">
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/galletaChocochip.jpg'" [menuTitle]="'Galleta chocochip'" [menuPrice]="'$49'" [hasExtras]="false">
+    </app-menu-item>
+    <app-menu-item [imgLink]="'assets/imgs/orejita.jpg'" [menuTitle]="'Orejita'" [menuPrice]="'$49'" [hasExtras]="false">
     </app-menu-item>
   </div>
 </main>
