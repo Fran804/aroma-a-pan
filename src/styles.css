@@ -42,7 +42,7 @@ h3 {font-size: 2.369rem; /* 37.92px */}
 
 h4 {font-size: 1.777rem; /* 28.48px */}
 
-h5 {font-size: 1.333rem; /* 21.28px */}
+p {font-size: 1.333rem; /* 21.28px */}
 
 small {font-size: 1rem; /* 12px */}
 
@@ -65,7 +65,7 @@ small {font-size: 1rem; /* 12px */}
   h2 { font-size: 1.875rem; /* Adjusted for mobile */ }
   h3 { font-size: 1.400rem; /* Adjusted for mobile */ }
   h4 { font-size: 1.050rem; /* Adjusted for mobile */ }
-  h5 { font-size: 0.800rem; /* Adjusted for mobile */ }
+  p { font-size: 0.800rem; /* Adjusted for mobile */ }
   small { font-size: 0.700rem; /* Adjusted for mobile */ }
 }
 
@@ -75,7 +75,7 @@ small {font-size: 1rem; /* 12px */}
   h2 { font-size: 1.350rem; /* Further adjusted for very small screens */ }
   h3 { font-size: 1.025rem; /* Further adjusted for very small screens */ }
   h4 { font-size: 0.800rem; /* Further adjusted for very small screens */ }
-  h5 { font-size: 0.700rem; /* Further adjusted for very small screens */ }
+  p { font-size: 0.700rem; /* Further adjusted for very small screens */ }
   small { font-size: 0.600rem; /* Further adjusted for very small screens */ }
 }
 
