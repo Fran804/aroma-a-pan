@@ -19,22 +19,13 @@ export class MenuItemComponent implements OnInit {
   ngOnInit() {
   }
 
-  private preloadImage(imgUrl: string): Promise<void> {
-    return new Promise((resolve) => {
-      const img = new Image();
-      img.src = imgUrl;
-      img.onload = () => resolve();
-    });
-  }
-
-  async openImage(img: string) {
-    await this.preloadImage(img);
+  openImage(img: string) {
     Swal.fire({
       imageUrl: img,
       imageWidth: '80%',
       showConfirmButton: false,
       showCloseButton: true,
-      imageAlt: "Imagen dañada, disculpe los inconvenientes",
+      imageAlt: "Imagen no encontrada, disculpe los inconvenientes",
       showClass: {
         popup: `
           animate__animated
@@ -48,6 +39,9 @@ export class MenuItemComponent implements OnInit {
           animate__fadeOutDown
           animate__faster
         `
+      },
+      customClass: {
+        popup: 'mi-margin-top'
       }
     });
   }

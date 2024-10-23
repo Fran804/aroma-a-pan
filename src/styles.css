@@ -59,6 +59,10 @@ small {font-size: 1rem; /* 12px */}
   color: var(--accent);
 }
 
+.mi-margin-top .swal2-image {
+  margin-top: 50px;
+}
+
 /* MEDIA QUERYS */
 
 /* Adjustments for mobile devices */
