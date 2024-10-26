@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Skiff';
+    src: local('Skiff Light'), local('Skiff-Light'),
+        url('Skiff-Light.woff2') format('woff2'),
+        url('Skiff-Light.woff') format('woff'),
+        url('Skiff-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }

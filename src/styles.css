@@ -1,5 +1,5 @@
 :root {
-  --background-color: #FFFF;
+  --background-color: #FFF8ED;
   --text-color: #050315;
   --primary-color: #DBA979;
   --primary-color-light: #f8cfa5;
@@ -8,55 +8,64 @@
   --accent: #6d9552;
 }
 
+/* TITLES */
 @font-face {
-  font-family: 'Drukaatie Burti';
-  src: url('./assets/fonts/drukaatieBurti/DrukaatieBurti-Light.ttf') format('truetype');
-  font-weight: normal;
+  font-family:"Gorden";
+  src:url("./assets/fonts/Gorden/Gorden.eot?") format("eot"),
+      url("./assets/fonts/Gorden/Gorden.woff") format("woff"),
+      url("./assets/fonts/Gorden/Gorden.ttf") format("truetype");
+  font-weight:normal;
+  font-style:normal;
+}
+/* SUBTITLES */
+@font-face {
+  font-family: 'Skiff';
+  src: local('Skiff Light'), local('Skiff-Light'),
+      url('./assets/fonts/Skiff-Light/Skiff-Light.woff2') format('woff2'),
+      url('./assets/fonts/Skiff-Light/Skiff-Light.woff') format('woff'),
+      url('./assets/fonts/Skiff-Light/Skiff-Light.ttf') format('truetype');
+  font-weight: lighter;
   font-style: normal;
 }
-
+/* TEXT */
 @font-face {
-  font-family: 'Neucha';
-  src: url('./assets/fonts/neucha/neucha-latin-400-normal.woff2') format('woff2'),
-       url('./assets/fonts/neucha/neucha-latin-400-normal.woff') format('woff'),
-       url('./assets/fonts/neucha/neucha-latin-400-normal.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Neucha';
-  src: url('./assets/fonts/neucha/neucha-latin-400-normal.woff2') format('woff2'),
-       url('./assets/fonts/neucha/neucha-latin-400-normal.woff') format('woff'),
-       url('./assets/fonts/neucha/neucha-latin-400-normal.ttf') format('truetype');
+  font-family: 'Rabbits Goody';
+  src: local('Rabbits Goody Goody'), local('Rabbits-Goody-Goody'),
+      url('./assets/fonts/Rabbits-Goody/Rabbits-Goody.woff2') format('woff2'),
+      url('./assets/fonts/Rabbits-Goody/Rabbits-Goody.woff') format('woff'),
+      url('./assets/fonts/Rabbits-Goody/Rabbits-Goody.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 /* General declarations */
-h1 {font-size: 4.210rem; /* 67.36px */}
-
-h2 {font-size: 3.158rem; /* 50.56px */}
-
-h3 {font-size: 2.369rem; /* 37.92px */}
-
-h4 {font-size: 1.777rem; /* 28.48px */}
-
-p {font-size: 1.333rem; /* 21.28px */}
-
-small {font-size: 1rem; /* 12px */}
-
-.icon-text {width: 1rem; /* 21.28px */}
+#menu-container {
+  background-color: var(--background-color);
+}
 
 *{
-  font-family: 'Neucha';
+  font-family: 'Rabbits Goody';
   margin: 0;
   padding: 0;
 }
 
 .title-font {
-  font-family: 'Drukaatie Burti';
+  font-family: 'Gorden';
   color: var(--accent);
+}
+
+.subtitle-font {
+  font-family: 'Skiff', Arial, Helvetica, sans-serif;
+  font-variant-ligatures: none;
+  cursor: pointer;
+}
+
+.color-titles {
+  color:  #B27500;
+}
+
+.color-subtitles {
+  color: #4980C2;
 }
 
 .mi-margin-top .swal2-image {
@@ -65,15 +74,27 @@ small {font-size: 1rem; /* 12px */}
 
 /* MEDIA QUERYS */
 
+/* Adjustments for PC devices */
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 2.369rem; /* 28.48px */}
+
+p, a {font-size: 2rem; color: black; font-weight: bolder;/* 21.28px */}
+
+.icon-text {width: 1rem; /* 21.28px */}
+
 /* Adjustments for mobile devices */
 @media (max-width: 768px) {
   h1 { font-size: 2.500rem; /* Adjusted for mobile */ }
   h2 { font-size: 1.875rem; /* Adjusted for mobile */ }
   h3 { font-size: 1.400rem; /* Adjusted for mobile */ }
-  h4 { font-size: 1.050rem; /* Adjusted for mobile */ }
-  p { font-size: 0.800rem; /* Adjusted for mobile */ }
+  h4 { font-size: 1.400rem; /* Adjusted for mobile */ }
+  p, a { font-size: 1rem; /* Adjusted for mobile */ }
   .icon-text { width: 0.700rem; /* Adjusted for mobile */ }
-  small { font-size: 0.700rem; /* Adjusted for mobile */ }
 }
 
 /* Further adjustments for small screens */
@@ -81,10 +102,9 @@ small {font-size: 1rem; /* 12px */}
   h1 { font-size: 1.800rem; /* Further adjusted for very small screens */ }
   h2 { font-size: 1.350rem; /* Further adjusted for very small screens */ }
   h3 { font-size: 1.025rem; /* Further adjusted for very small screens */ }
-  h4 { font-size: 0.800rem; /* Further adjusted for very small screens */ }
-  p { font-size: 0.700rem; /* Further adjusted for very small screens */ }
+  h4 { font-size: 1.025rem; /* Further adjusted for very small screens */ }
+  p, a { font-size: 1rem; /* Further adjusted for very small screens */ }
   .icon-text { width: 0.600rem; /* Further adjusted for very small screens */ }
-  small { font-size: 0.600rem; /* Further adjusted for very small screens */ }
 }
 
 /* Further adjustments for very small screens */

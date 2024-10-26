@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Rabbits Goody';
+    src: local('Rabbits Goody Goody'), local('Rabbits-Goody-Goody'),
+        url('Rabbits-Goody.woff2') format('woff2'),
+        url('Rabbits-Goody.woff') format('woff'),
+        url('Rabbits-Goody.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

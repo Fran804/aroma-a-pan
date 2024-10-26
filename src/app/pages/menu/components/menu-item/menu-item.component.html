@@ -1,15 +1,15 @@
 <div class="menu-item-container">
     <div class="title-item">
-        <h2 style="cursor: pointer;" (click)="openImage(imgLink)">{{menuTitle}}</h2>
+        <h2 class="subtitle-font" (click)="openImage(imgLink)">{{menuTitle}}</h2>
         <h2>{{menuPrice}}</h2>
     </div>
     <ng-content select="[body]"></ng-content>
     <div class="footer-item">
         @if (hasGuarniciones) {
-            <button (click)="openGuarnicion()" class="btn-item"><h5>Guarniciones</h5></button>
+            <button (click)="openGuarnicion()" class="btn-item"><h4>Guarniciones</h4></button>
         }
         @if(hasExtras){
-            <button (click)="openExtras()" class="btn-item"><h5>Extras</h5></button>
+            <button (click)="openExtras()" class="btn-item"><h4>Extras</h4></button>
         }
     </div>
 </div>
