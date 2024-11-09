@@ -26,20 +26,6 @@ export class MenuItemComponent implements OnInit {
       showConfirmButton: false,
       showCloseButton: true,
       imageAlt: "Imagen no encontrada, disculpe los inconvenientes",
-      showClass: {
-        popup: `
-          animate__animated
-          animate__fadeInUp
-          animate__faster
-        `
-      },
-      hideClass: {
-        popup: `
-          animate__animated
-          animate__fadeOutDown
-          animate__faster
-        `
-      },
       customClass: {
         popup: 'mi-margin-top'
       }
